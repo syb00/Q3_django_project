@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Bookmark Update{% endblock %}
+
+{% block content %}
+<form action="" method="post" style="margin-top: 20px; text-align: center">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="수정하기" class="btn btn-primary btn-sm" style="font-weight: bold">
+</form>
+{% endblock %}

@@ -1,0 +1,25 @@
+body {
+    background: white url("images/choice.png") no-repeat;
+    background-position: 70% 130px;
+    background-size: 180px 180px;
+}
+
+h1 {
+    color: #b088f9;
+    font-style: italic;
+}
+
+.choiceF {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+input {
+    color: #6155a6;
+}
+
+.back {
+    color: #98acf8;
+    text-decoration: underline;
+    font-weight: bold;
+}

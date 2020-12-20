@@ -1,0 +1,102 @@
+h1 {
+    font-family: 'Georgia';
+}
+
+.date:hover {
+    transform:scale(1.1);
+}
+
+.post h1 {
+    color: #949cdf;
+    font-family: 'Georgia';
+    font-weight: bold;
+    font-style: italic;
+}
+
+body {
+    padding-left: 15px;
+}
+
+li {
+    padding-right: 6px;
+}
+
+.navbar {
+    padding-left: 0;
+    padding-bottom: 3px;
+    padding-top: 2px;
+    font-family: sans-serif;
+    border-radius: 20px;
+}
+
+.navbar a {
+    margin: 0;
+}
+
+.navbar-brand {
+    font-family: sans-serif;
+    font-size: 20px;
+    padding-right: 0;
+}
+
+.nav-item active {
+    margin: 5px;
+}
+
+.nav-link {
+    font-family: sans-serif;
+    font-size: 1.15em;
+    padding-left: 0;
+}
+
+.page-header {
+    border-radius: 20px;
+    width: 99%;
+    background-color: #b088f9;
+    margin-top: 0;
+    padding: 20px 20px 30px 50px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+.content {
+    margin-left: 30px;
+}
+
+h2, h3, h4 {
+    font-family: 'Georgia';
+}
+
+.save {
+    float: right;
+    color: #da9ff9;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #f8f1f1;
+    float: right;
+    font-size: 26pt;
+    margin-top: 25px;
+    margin-right: 40px;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h1 a, .post h1 a:visited {
+    color: #000000;
+}
+
+.date {
+    color: #98acf8;
+    font-weight: bold;
+}

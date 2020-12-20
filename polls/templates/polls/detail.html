@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Polls Detail{% endblock %}
+
+{% block content %}
+<body>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/styleD.css' %}">
+<h1>{{question.question_text}}</h1>
+{% if error_message %}
+<p><strong>{{error_message}}</strong></p>
+{% endif %}
+
+<form action="{% url 'polls:vote' question.id %}" method="post" class="choiceF">
+{% csrf_token %}
+{% for choice in question.choice_set.all %}
+    <input type="radio" name="choice" id="choice{{forloop.counter}}" value="{{choice.id}}">
+    <label for="choice{{forloop.counter}}">{{choice.choice_text}}</label><br>
+{% endfor %}
+<input type="submit" value="Vote">
+<br>
+<br>
+<a href="{% url 'polls:index' %}" class="back">List again?</a>
+</form>
+</body>
+{% endblock %}

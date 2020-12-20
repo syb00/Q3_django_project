@@ -1,0 +1,24 @@
+body {
+    background: white url("images/result.png") no-repeat;
+    background-position: 70% 110px;
+    background-size: 180px 180px;
+}
+
+h1 {
+    margin-left: 20px;
+    color: #b088f9;
+    font-style: italic;
+}
+
+.result {
+    font-weight: bold;
+    margin-top: 20px;
+    color: #6155a6;
+}
+
+.vote {
+    color: #98acf8;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-left: 20px;
+}

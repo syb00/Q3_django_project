@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Bookmark Detail{% endblock %}
+
+{% block content %}
+{{object.site_name}}<br/>
+<a href="{{bookmark.url}}" target="_blank">{{object.url}}</a>
+<br>
+<br>
+<div>
+<a href="{% url 'bookmark:update' pk=bookmark.id %}" class="btn btn-success btn-sm">수정</a>
+<a href="{% url 'bookmark:delete' pk=bookmark.id %}" class="btn btn-danger btn-sm">삭제</a>
+</div>
+{% endblock %}
